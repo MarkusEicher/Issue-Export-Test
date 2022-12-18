@@ -1,8 +1,6 @@
 name: Export issues
 on:
-  schedule:
-    # run every 5 minutes
-    - cron:  '0,5,10,15,20,25,30,35,40,45,50,55 * * * *'
+  workflow_dispatch:
 jobs:
   deploy:
     name: Export issues to S3
